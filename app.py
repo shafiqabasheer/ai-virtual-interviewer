@@ -2,7 +2,6 @@ import streamlit as st
 
 # Dummy user data
 users = {
-    "admin": "1234",
     "user": "abcd"
 }
 
