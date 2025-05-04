@@ -9,14 +9,14 @@ users = {
 # Login function
 def login():
     st.title("AI Virtual Interviewer - Login")
-    username = st.text_input("Username")
+    email = st.text_input("email")
     password = st.text_input("Password", type="password")
     if st.button("Login"):
-        if username in users and users[username] == password:
-            st.success(f"Welcome, {username}!")
+        if email in users and users[email] == password:
+            st.success(f"Welcome, {email}!")
             return True
         else:
-            st.error("Invalid username or password")
+            st.error("Invalid email or password")
             return False
     return False
 
